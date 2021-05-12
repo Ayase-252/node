@@ -8,7 +8,8 @@
 }
 
 .hljs-attribute,
-.hljs-keyword {
+.hljs-keyword,
+.hljs-doctag {
   color: #338;
 }
 
@@ -18,11 +19,10 @@
   color: #cf350d;
 }
 
-.hljs-doctag {
+.hljs-doctag .hljs-type {
   color: #040404;
 }
 
-.hljs-doctag .hljs-type,
 .hljs-doctag .hljs-variable,
 .hljs-comment {
   color: #666;
@@ -36,12 +36,16 @@
 }
 
 .dark-mode .hljs-keyword,
-.dark-mode .hljs-attribute {
+.dark-mode .hljs-attribute,
+.dark-mode .hljs-doctag {
   color: #66d9ef;
 }
 
-.dark-mode .hljs-doctag .hljs-type,
 .dark-mode .hljs-doctag .hljs-variable,
 .dark-mode .hljs-comment {
   color: var(--gray7);
+}
+
+.dark-mode .hljs-doctag .hljs-type {
+  color: var(--grey-smoke);
 }
